@@ -1,0 +1,3 @@
+{
+  "app": "java -jar ${PWD}/target/kms-error.jar"
+}
