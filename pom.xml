@@ -13,7 +13,7 @@
     <properties>
         <java.version>1.8</java.version>
         <awssdk.version>2.15.64</awssdk.version>
-        <cdk.version>1.83.0</cdk.version>
+        <cdk.version>1.84.0</cdk.version>
     </properties>
 
     <dependencyManagement>
