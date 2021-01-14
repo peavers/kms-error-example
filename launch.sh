@@ -9,7 +9,7 @@ docker pull localstack/localstack:latest
 # Stop/start localstack
 docker stop "$(docker ps -a -q --filter="name=localstack")" &>/dev/null
 docker rm "$(docker ps -a -q --filter="name=localstack")" &>/dev/null
-docker run -d -p 4566:4566 --name=localstack -e SERVICES=kms,cloudformation localstack/localstack:latest
+docker run -d -p 4566:4566 --name=localstack localstack/localstack:latest
 
 # Compile the stack
 mvn clean package && cdk synth \*

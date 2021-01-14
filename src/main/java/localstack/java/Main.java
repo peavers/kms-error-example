@@ -1,4 +1,4 @@
-package kms.error;
+package localstack.java;
 
 import software.amazon.awscdk.core.App;
 import software.amazon.awscdk.core.AppProps;
@@ -16,7 +16,7 @@ public class Main extends App {
                 .outdir(OUTPUT_DIR)
                 .build());
 
-        new AppGenerator(app, "error-stack");
+        new AppGenerator(app, "localstack-java");
 
         app.synth();
     }
