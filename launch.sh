@@ -3,6 +3,9 @@
 # Remove old runs
 if [ -d "${PWD}"/cdk.out ]; then rm -Rf "${PWD}"/cdk.out; fi
 
+# Force latest version
+docker pull localstack/localstack:latest
+
 # Stop/start localstack
 docker stop "$(docker ps -a -q --filter="name=localstack")" &>/dev/null
 docker rm "$(docker ps -a -q --filter="name=localstack")" &>/dev/null
