@@ -12,7 +12,7 @@
 
     <properties>
         <java.version>11</java.version>
-        <awssdk.version>2.15.66</awssdk.version>
+        <awssdk.version>2.15.67</awssdk.version>
         <cdk.version>1.85.0</cdk.version>
     </properties>
 
